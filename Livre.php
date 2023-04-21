@@ -68,7 +68,12 @@ class Livre{
         $this->_auteur->ajouteLivre($this);
     }
 
-
+    //creation de le methode __toString() pour afficher les informations de l'objet
+    public function __toString()
+    {
+        return  "<br>Le livre dont il s'agit a été ecrit par ".$this->_auteur->getPrenom()." ".$this->_auteur->getNom().".<br>
+                Ce livre s'appelle ".$this->getTitre().". <br>";
+    }
     
 
 

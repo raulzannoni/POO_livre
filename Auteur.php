@@ -55,6 +55,14 @@ class Auteur
             {
                 echo count($this->_livres);
             }
+
+        //creation de le methode __toString() pour afficher les informations de l'objet
+        public function __toString()
+        {
+                return  "<br>L'auteur dont il s'agit est ".$this->getPrenom()." ".$this->getNom().".<br>
+                        Aujourd'hui nous avons".strval(count($this->getLivres()))." de ses livres!<br>";
+        }    
+
         
         //methode pour afficher la bibliographie complet de l'auteur
         public function afficherBibliographie()

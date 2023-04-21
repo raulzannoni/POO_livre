@@ -14,12 +14,14 @@ $livre_2 = new Livre("Simetierre", 374, "1983", 15.0, $auteur);
 $livre_3 = new Livre("Le Fléau", 823, "1978", 14.0, $auteur);
 $livre_4 = new Livre("Shining", 447, "1977", 16.0, $auteur);
 
-//appel de le methode pour calculer le livre de l'auteur 
-//$auteur->countLivres();
+//imprime de toutes les informations de l'objet grace à le methode __toString()
+echo $auteur;
+
+//imprime de toutes les informations de l'objet grace à le methode __toString()
+echo $livre_1;
 
 //appel de le method pour afficher la bibliographie
 $auteur->afficherBibliographie(); 
 
-//methode toString() à terminer
-//echo $auteur;
+
 ?>
